@@ -2,7 +2,7 @@
   "name": "progresstracker",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "nodemon server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2",
+    "nodemon": "^3.0.1",
     "pug": "^3.0.2"
   }
 }
