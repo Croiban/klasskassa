@@ -6,7 +6,8 @@ block content
 			.title Klasskassa 5A
 			img.money-img(src="img/money.png")
 			.progress-container
-				.progress #{Math.round((balance/goal) * 100)}%
+				.progress 
+					.progress-percent #{Math.round((balance/goal) * 100)}%
 			.amount
 				.balance.amount-detail 
 					span.under-title Insamlat:
