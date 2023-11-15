@@ -4,9 +4,14 @@ block content
 	.main
 		.card
 			.title Klasskassa 5A
-			.amount
-				img(src="img/money.png")
-				span 1000kr/35000kr
+			img.money-img(src="img/money.png")
 			.progress-container
-				.progress 20%
+				.progress #{Math.round((balance/goal) * 100)}%
+			.amount
+				.balance.amount-detail 
+					span.under-title Insamlat:
+					span #{balance}kr
+				.goal.amount-detail  
+					span.under-title Mål:
+					span #{goal}kr
 			.details Senast uppdaterad 2023-05-12 08:12
