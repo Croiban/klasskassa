@@ -7,12 +7,13 @@ block content
 			img.money-img(src="img/money.png")
 			.progress-container
 				.progress 
-					.progress-percent #{Math.round((balance/goal) * 100)}%
+					.progress-percent #{Math.round((process.env.balance/process.env.goal) * 100)}%
 			.amount
 				.balance.amount-detail 
 					span.under-title Insamlat:
-					span #{balance}kr
+					span #{process.env.balance}kr
 				.goal.amount-detail  
 					span.under-title Mål:
-					span #{goal}kr
-			.details Senast uppdaterad 2023-05-12 08:12
+					span #{process.env.goal}kr
+			.details Senast uppdaterad 
+				span #{process.env.lastUpdate}
