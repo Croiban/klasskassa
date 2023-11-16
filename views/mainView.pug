@@ -6,14 +6,15 @@ block content
 			.title Klasskassa 5A
 			img.money-img(src="img/money.png")
 			.progress-container
-				.progress 
-					.progress-percent #{Math.round((process.env.balance/process.env.goal) * 100)}%
+				.progress(style="width: " +(balance/goal) * 100+ "%; ")
+					.progress-percent #{Math.round((balance/goal) * 100)}%
 			.amount
 				.balance.amount-detail 
 					span.under-title Insamlat:
-					span #{process.env.balance}kr
+					span #{balance}kr
 				.goal.amount-detail  
 					span.under-title Mål:
-					span #{process.env.goal}kr
+					span #{goal}kr
 			.details Senast uppdaterad 
 				span #{process.env.lastUpdate}
+
